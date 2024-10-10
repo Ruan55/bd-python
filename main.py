@@ -39,6 +39,15 @@ class Usuario(Base):
 Base.metadata.create_all(bind=db)
 
 # Salvar banco de dados
+# for i in range(2)
+    # nome = input("Digite o seu nome: ")
+    # email = input("Digite a sua idade: ")
+    # senha = input("Digite a sua senha: ")
+
+    # usuario = Usuario(nome=nome, senha=senha, email=email)
+    # session.add(usuario)
+    #session.commit()
+
 # usuario = Usuario("Ruan", "Ruan@gmail.com", "123")
 usuario = Usuario(nome="Ruan", email="Ruan@gmail.com", senha="123")
 session.add(usuario)
